@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
-   <project name="Hello World Project" default="info">
+   <project name="First Project" default="run">
    
-   <target name="info">
-      <echo>Hello World - Welcome to Apache Ant!</echo>
+   <target name="run" depends="compile">
+      <java classname="home">
+         <classpath path="sample"/>
+         </java>
    </target>
+   <target name="compile">
+      <javac srcdir="sample" destdir="sample"/>
+      </target>
    
 </project>
