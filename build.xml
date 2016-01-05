@@ -1,13 +1,20 @@
-<?xml version="1.0"?>
-   <project name="First Project" default="run">
-   
-   <target name="run" depends="compile">
-      <java classname="home">
-         <classpath path="."/>
-         </java>
-   </target>
-   <target name="compile">
-      <javac includeantruntime="run" srcdir="." destdir="."/>
-      </target>
-   
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="jar">
+<target name="clean">
+<delete dir="./build/classes"/>
+<delete dir="./build"/>
+</target>
+<target name="compile" depends="clean">
+<mkdir dir="./build"/>
+<mkdir dir="./build/classes"/>
+<javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
+</target>
+<target name="jar" depends="compile">
+<mkdir dir="./build/jar"/>
+<jar destfile="/Main.jar" basedir="./build/classes">
+<manifest>
+<attribute name="Main-Class" value="Main"/>
+</manifest>
+</jar>
+</target>
 </project>
