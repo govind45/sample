@@ -7,7 +7,7 @@
          </java>
    </target>
    <target name="compile">
-      <javac srcdir="." destdir="."/>
+      <javac includeantruntime="false" srcdir="." destdir="."/>
       </target>
    
 </project>
