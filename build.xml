@@ -11,7 +11,7 @@
 </target>
 <target name="jar" depends="compile">
 <mkdir dir="./build/jar"/>
-<jar destfile="/home/ec2-user/Main.jar" basedir="./build/classes">
+<! jar destfile="/home/ec2-user/Main.jar" basedir="./build/classes">
 <manifest>
 <attribute name="Main-Class" value="home"/>
 </manifest>
