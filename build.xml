@@ -9,12 +9,12 @@
 <mkdir dir="./build/classes"/>
 <javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
 </target>
-<target name="jar" depends="compile">
-<mkdir dir="./build/jar"/>
+<! target name="jar" depends="compile">
+<! mkdir dir="./build/jar"/>
 <! jar destfile="/home/ec2-user/Main.jar" basedir="./build/classes">
-<manifest>
-<attribute name="Main-Class" value="home"/>
-</manifest>
-</jar>
-</target>
+<! manifest>
+<! attribute name="Main-Class" value="home"/>
+<! /manifest>
+<! /jar>
+<! /target>
 </project>
