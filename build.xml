@@ -8,6 +8,6 @@
 <mkdir dir="./build"/>
 <mkdir dir="./build/classes"/>
 <javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
-<java=home></java>
+<java=home /></java>
 </target>
 </project>
