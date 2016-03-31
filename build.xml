@@ -9,7 +9,9 @@
 <mkdir dir="./build/classes"/>
 <javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
 </target>
-<target name="run" depends="compile">
-<java class="./build/classes/home" fork="true" />
-</target>
+<java classname="home.class" depends="compile">
+    <classpath>
+        <pathelement path="build/classes"/>
+    </classpath>
+</java>
 </project>
