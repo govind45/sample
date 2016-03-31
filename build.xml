@@ -12,7 +12,7 @@
 <target name="run" depends="compile">
 <java classname="home.class">
     <classpath>
-        <pathelement path="build/classes"/>
+        <pathelement path="./build/classes"/>
     </classpath>
 </java>
 </target>
