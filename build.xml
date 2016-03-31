@@ -9,9 +9,11 @@
 <mkdir dir="./build/classes"/>
 <javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
 </target>
-<java classname="home.class" depends="compile">
+<target name="run" depends="compile">
+<java classname="home.class">
     <classpath>
         <pathelement path="build/classes"/>
     </classpath>
 </java>
+</target>
 </project>
