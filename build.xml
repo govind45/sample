@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="run">
+<project default="compile">
 <target name="clean">  
 <delete dir="./build/classes"/>
 <delete dir="./build"/>
@@ -9,5 +9,4 @@
 <mkdir dir="./build/classes"/>
 <javac includeantruntime="true" srcdir="./src" destdir="./build/classes"/>
 </target>
-
 </project>
